@@ -5,4 +5,4 @@ function tong(a, b) {
 function hieu(a, b) {
   return a - b;
 }
-export default tong;
+export { tong };
