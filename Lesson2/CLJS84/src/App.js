@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Register from "./Components/FormRegister";
+import Register from "./Screens/StudentForm/FormRegister";
 
 function App() {
   return <Register />;

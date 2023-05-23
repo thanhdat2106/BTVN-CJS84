@@ -1,6 +1,6 @@
 import React from "react";
 
-const TextArea = ({ title, name, placeholder }) => {
+const TextArea = ({ title, name, placeholder, value, onChange }) => {
   return (
     <div className="form__group-textarea">
       <label for="exampleFormControlTextarea1" class="form-label">
@@ -11,6 +11,8 @@ const TextArea = ({ title, name, placeholder }) => {
         name={name}
         placeholder={placeholder}
         rows="3"
+        value={value}
+        onChange={onChange}
       ></textarea>
     </div>
   );

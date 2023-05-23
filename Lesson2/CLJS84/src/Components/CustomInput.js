@@ -1,6 +1,4 @@
-import React from "react";
-
-const CustomInput = ({ title, type, name, placeholder }) => {
+const CustomInput = ({ title, type, name, placeholder, value, onChange }) => {
   return (
     <div class="mb-3">
       <label for="formGroupExampleInput" class="form-label">
@@ -12,6 +10,8 @@ const CustomInput = ({ title, type, name, placeholder }) => {
         placeholder={placeholder}
         aria-label={name}
         aria-describedby="basic-addon1"
+        value={value}
+        onChange={onChange}
       />
     </div>
   );
