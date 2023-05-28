@@ -4,7 +4,7 @@ const studentDefault = {
   FirstName: "",
   LastName: "",
   MiddleName: "",
-  Course: "",
+  Course: 1,
   Gender: 0,
   Phone: "",
   CurrentAddress: "",
@@ -27,10 +27,12 @@ const errorDefault = {
 const useHookRegister = () => {
   const [student, setStudent] = useState(studentDefault);
   const [error, setErrot] = useState(errorDefault);
+  const [showNotify, setShowNotify] = useState(false);
   const actSubmit = () => {
     const result = validate();
     if (!result) {
       console.log(123, student);
+      //   setShowNotify(true);
     }
   };
   const validate = () => {
@@ -127,6 +129,6 @@ const useHookRegister = () => {
     setErrot(errorClone);
   };
 
-  return { actSubmit, student, error, setStudent, onChange };
+  return { showNotify, actSubmit, student, error, setStudent, onChange };
 };
 export default useHookRegister;

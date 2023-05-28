@@ -13,7 +13,7 @@ const Select = ({ title, dataOption, onChange, value }) => {
         value={value}
       >
         {dataOption.map((item, index) => (
-          <option key={index} className="form__option" value={item.name}>
+          <option key={item.key} className="form__option" value={item.key}>
             {item.name}
           </option>
         ))}
