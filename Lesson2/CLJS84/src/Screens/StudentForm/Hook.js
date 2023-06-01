@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { emailValidate, phoneValidate } from "../../Common/Const";
+import { emailValidate, phoneValidate } from "../../Common/functions";
 const studentDefault = {
   FirstName: "",
   LastName: "",

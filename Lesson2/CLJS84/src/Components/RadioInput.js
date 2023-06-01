@@ -1,7 +1,6 @@
 import React from "react";
 
 const RadioInput = ({ title, name, dataRadio, onChange, value }) => {
-  console.log(value);
   return (
     <div className="mb-3">
       <label for="formGroupExampleInput" class="form-label">
